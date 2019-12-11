@@ -38,10 +38,13 @@ interface ApiServiceInterface {
     @GET("posts/{id}")
     fun getUser(@Path("id") id: Int) : Observable<User>
 
+    @GET("users")
+    fun getUserList(): Observable<List<User>>
+
     @DELETE("albums/{id}")
     fun deleteUser(@Path("id") id: Int)
 
-    companion object Facrtory{
+    companion object Factory{
         fun create(): ApiServiceInterface{
             val retrofit = retrofit2.Retrofit.Builder()
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

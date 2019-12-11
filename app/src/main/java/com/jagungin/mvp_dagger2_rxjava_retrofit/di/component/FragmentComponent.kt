@@ -1,7 +1,8 @@
 package com.jagungin.mvp_dagger2_rxjava_retrofit.di.component
 
-import androidx.fragment.app.ListFragment
 import com.jagungin.mvp_dagger2_rxjava_retrofit.di.module.FragmentModule
+import com.jagungin.mvp_dagger2_rxjava_retrofit.ui.about.AboutFragment
+import com.jagungin.mvp_dagger2_rxjava_retrofit.ui.list.ListFragment
 import dagger.Component
 
 /**

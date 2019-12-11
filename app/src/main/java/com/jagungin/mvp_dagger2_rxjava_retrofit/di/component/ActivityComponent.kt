@@ -1,6 +1,6 @@
 package com.jagungin.mvp_dagger2_rxjava_retrofit.di.component
 
-import com.jagungin.mvp_dagger2_rxjava_retrofit.MainActivity
+import com.jagungin.mvp_dagger2_rxjava_retrofit.ui.main.MainActivity
 import com.jagungin.mvp_dagger2_rxjava_retrofit.di.module.ActivityModule
 import dagger.Component
 
@@ -10,5 +10,5 @@ import dagger.Component
  */
 @Component(modules = arrayOf(ActivityModule::class))
 interface ActivityComponent {
-    fun injec(mainActivity: MainActivity)
+    fun inject(mainActivity: MainActivity)
 }

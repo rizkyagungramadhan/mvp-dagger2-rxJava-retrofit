@@ -6,6 +6,6 @@ package com.jagungin.mvp_dagger2_rxjava_retrofit.util
  */
 class Constants {
     companion object {
-        const val BASE_URL = "/system"
+        const val BASE_URL = "https://jsonplaceholder.typicode.com/"
     }
 }
